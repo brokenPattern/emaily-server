@@ -1,0 +1,26 @@
+{
+  "name": "emaily-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "^22.0.0",
+    "npm": "^10.9.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brokenPattern/emaily-server.git"
+  },
+  "author": "Michal Neumann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brokenPattern/emaily-server/issues"
+  },
+  "homepage": "https://github.com/brokenPattern/emaily-server#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
