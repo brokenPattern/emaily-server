@@ -7,7 +7,8 @@
     "npm": "^10.9.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
   "homepage": "https://github.com/brokenPattern/emaily-server#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "cookie-session": "^2.1.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.4",
+    "nodemon": "^3.1.9",
+    "passport": "^0.5.3",
+    "passport-google-oauth20": "^2.0.0"
   }
 }
