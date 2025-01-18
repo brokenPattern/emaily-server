@@ -6,16 +6,15 @@ const keys = require('./config/keys');
 require('./models/user');
 require('./services/passport');
 
-const DB_URI = process.env.DB_URI || keys.mongoURI;
-mongoose.connect(DB_URI)
+
+mongoose.connect(keys.mongoURI)
 
 const app = express();
 
-const COOKIE_KEY = process.env.COOKIE_KEY || keys.cookieKey;
 
 app.use(cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [COOKIE_KEY]
+    keys: [keys.cookieKey]
 }));
 
 app.use(passport.initialize());
